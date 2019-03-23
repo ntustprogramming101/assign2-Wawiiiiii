@@ -46,9 +46,9 @@ void setup() {
 }
 
 void draw() {
-	// Switch Game State
+// Switch Game State
   switch(gameState){
-		case GAME_START:
+    case GAME_START:
       background(title);
       image(startNormal, 248, 360, 144, 60); 
       if(mouseX>=248 && mouseX<=392 && mouseY>=360 && mouseY<=420){
@@ -58,7 +58,7 @@ void draw() {
         }
       }
     break;
-		case GAME_RUN:
+    case GAME_RUN:
       background(bg);
       image (soil, 0, 160);
 
@@ -136,7 +136,4 @@ void keyPressed(){
 }
 
 void keyReleased(){
-  switch(keyCode){
-  
-  }
 }
